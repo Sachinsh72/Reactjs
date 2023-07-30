@@ -1,5 +1,6 @@
 // this file is dog card component 
-import Image from "./Image"
+import Image,{CatCard} from "./Image"
+
 
 //------------for the default export--------------
 
@@ -46,12 +47,11 @@ export function DogCard(){
 // To return multiple elements from a React component, 
 // you'll need to wrap the element in a root element.
 
-export function DogCard2(){
+export function DogCard2(props){
     return(
         <>
-            <h3>Bruno</h3>
-            <Image/>
-            <Image/>
+            <h3>{props.name}</h3>
+            <CatCard image={props.image}/>
         </>
     )
 }
