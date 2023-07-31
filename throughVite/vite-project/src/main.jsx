@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Person, Header, List } from './App'
+import { Person, Header, List, Button } from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -8,6 +8,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header title ="Problem 3"/>
     <List item="Item1"/>
     <List item="Item2"/>
-    {/* <Button text="Click to chenge" /> */}
+    <Button text="Click to chenge" onClick ={()=> console.log("Button clicked")} />
   </React.StrictMode>,
 )
