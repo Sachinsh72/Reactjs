@@ -2,7 +2,7 @@
 // import DogCard from "./DogCard";
 // import named export
 import {DogCard, DogCard2} from "./DogCard";
-import Image,{CatCard} from "./Image";
+import Image,{CatCard,DestructureProps} from "./Image";
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
       {/* props call  */}
       <CatCard image="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"/>
 
+      <DestructureProps name="Tommy" age="15"/>
     </>
   );
 }

@@ -11,5 +11,15 @@ export function CatCard(props){
     return <img src={props.image} alt="catimage"/>
 }
 
+// props by destructuring
+export const  DestructureProps = ({name,age})=>{
+    return (
+        <>
+        <h1>{name}</h1>
+        <h2>{age}</h2>
+        </>
+    )
+}
+
 // like- <CatCard src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"/>
 export default Image
