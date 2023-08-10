@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import {DogCard}  from './DogCard';
 import Counter from './Counter';
+import {Todos, ArrayTodos} from './Todos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +12,10 @@ root.render(
     <App/>
     <DogCard/>
     <Counter/>
+    <br/>
+    <Todos/>
+    <br/>
+    <ArrayTodos/>
     
   </React.StrictMode>
 );
